@@ -20,7 +20,7 @@ terraform {
 provider "azuread" {}
 
 # Microsoft Entra ID (Azure AD)
-resource "azuread_application" "example" {
-  display_name     = "Example Application"
-  description      = "My example application"
+resource "azuread_application" "teams_bot_app" {
+  display_name     = "Teams Bot App"
+  description      = "Teams Bot App"
 }
