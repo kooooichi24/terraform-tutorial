@@ -26,3 +26,12 @@ resource "azurerm_resource_group" "bot-test-rg" {
   name = "bot-test-rg"
   location = "japaneast"
 }
+
+# Azure Bot
+resource "azurerm_bot_service_azure_bot" "example" {
+  name                = "example"
+  resource_group_name = azurerm_resource_group.bot-test-rg.name
+  location            = "global"
+  microsoft_app_id    = "6a72ef09-60c3-4e4d-9b01-cfdf184bd17d"
+  sku                 = "F0"
+}
