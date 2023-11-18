@@ -12,7 +12,7 @@ terraform {
     organization = "koichi-furukawa"
     workspaces {
       project = "product-A"
-      name = "azure_ad_application"
+      name = "azuread_application"
     }
   }
 }
