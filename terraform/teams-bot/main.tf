@@ -6,11 +6,6 @@ terraform {
       source  = "hashicorp/azurerm"
       version = "~> 3.0.2"
     }
-
-    # azuread = {
-    #   source  = "hashicorp/azuread"
-    #   version = "~> 2.7.0"
-    # }
   }
 
   cloud {
@@ -25,8 +20,6 @@ terraform {
 provider "azurerm" {
   features {}
 }
-
-# provider "azuread" {}
 
 # Resource Group
 resource "azurerm_resource_group" "koichi-furukawa-bot-test-rg" {
