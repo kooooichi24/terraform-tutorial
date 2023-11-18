@@ -12,7 +12,7 @@ terraform {
     organization = "koichi-furukawa"
     workspaces {
       project = "product-A"
-      name = "teams-bot"
+      name = "azurerm_bot_service_azure_bot"
     }
   }
 }
