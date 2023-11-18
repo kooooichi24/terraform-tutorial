@@ -6,6 +6,11 @@ terraform {
       source  = "hashicorp/azurerm"
       version = "~> 3.0.2"
     }
+
+    # azuread = {
+    #   source  = "hashicorp/azuread"
+    #   version = "~> 2.7.0"
+    # }
   }
 
   cloud {
@@ -21,6 +26,8 @@ provider "azurerm" {
   features {}
 }
 
+# provider "azuread" {}
+
 # Resource Group
 resource "azurerm_resource_group" "koichi-furukawa-bot-test-rg" {
   name = "koichi-furukawa-bot-test-rg"
@@ -28,4 +35,7 @@ resource "azurerm_resource_group" "koichi-furukawa-bot-test-rg" {
 }
 
 # Microsoft Entra ID (Azure AD)
-# resource "azuread_application" "koichi-furukawa-test-bot" {}
+resource "azuread_application_registration" "example" {
+  display_name     = "Example Application"
+  description      = "My example application"
+}
