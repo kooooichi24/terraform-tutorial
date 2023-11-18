@@ -22,7 +22,7 @@ provider "azurerm" {
 }
 
 # Resource Group
-resource "azurerm_resource_group" "koichi-furukawa-bot-test-rg" {
-  name = "koichi-furukawa-bot-test-rg"
+resource "azurerm_resource_group" "bot-test-rg" {
+  name = "bot-test-rg"
   location = "japaneast"
 }
