@@ -1,16 +1,3 @@
-variable "AZUREAD_ARM_CLIENT_ID" {
-  type    = string
-  default = ""
-}
-variable "AZUREAD_ARM_CLIENT_SECRET" {
-  type    = string
-  default = ""
-}
-variable "AZUREAD_ARM_TENANT_ID" {
-  type    = string
-  default = ""
-}
-
 # Configure the Azure provider
 terraform {
   required_version = ">= 1.1.0"
