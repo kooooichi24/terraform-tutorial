@@ -2,10 +2,10 @@
 terraform {
   required_version = ">= 1.1.0"
   required_providers {
-    # azurerm = {
-    #   source  = "hashicorp/azurerm"
-    #   version = "~> 3.81.0"
-    # }
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "~> 3.81.0"
+    }
 
     azuread = {
       source  = "hashicorp/azuread"
@@ -22,9 +22,9 @@ terraform {
   }
 }
 
-# provider "azurerm" {
-#   features {}
-# }
+provider "azurerm" {
+  features {}
+}
 
 provider "azuread" {
   client_id     = var.AZUREAD_ARM_CLIENT_ID
