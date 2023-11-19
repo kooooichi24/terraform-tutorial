@@ -1,3 +1,7 @@
+variable "AZUREAD_ARM_CLIENT_ID" {}
+variable "AZUREAD_ARM_CLIENT_SECRET" {}
+variable "AZUREAD_ARM_TENANT_ID" {}
+
 # Configure the Azure provider
 terraform {
   required_version = ">= 1.1.0"
@@ -27,4 +31,7 @@ terraform {
 # }
 
 provider "azuread" {
+  client_id     = var.AZUREAD_ARM_CLIENT_ID
+  client_secret = var.AZUREAD_ARM_CLIENT_SECRET
+  tenant_id     = var.AZUREAD_ARM_TENANT_ID
 }
