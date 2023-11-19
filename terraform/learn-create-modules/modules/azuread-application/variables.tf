@@ -1,4 +1,3 @@
-# The display name of the application.
 variable "display_name" {
   type = string
   description = "Name of the application"
