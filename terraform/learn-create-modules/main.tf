@@ -9,5 +9,5 @@ module "azure-bot" {
   source  = "./modules/azure-bot"
 
   prefix             = "learn-create-modules"
-  microsoft_app_id   = module.azuread-application.application.application_id
+  microsoft_app_id   = module.azuread-application.client_id
 }
