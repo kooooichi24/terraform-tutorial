@@ -27,4 +27,7 @@ terraform {
 # }
 
 provider "azuread" {
+  client_id     = var.AZUREAD_ARM_CLIENT_ID
+  client_secret = var.AZUREAD_ARM_CLIENT_SECRET
+  tenant_id     = var.AZUREAD_ARM_TENANT_ID
 }

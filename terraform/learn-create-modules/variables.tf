@@ -1,0 +1,5 @@
+variable "AZUREAD_ARM_CLIENT_ID" {}
+
+variable "AZUREAD_ARM_CLIENT_SECRET" {}
+
+variable "AZUREAD_ARM_TENANT_ID" {}
